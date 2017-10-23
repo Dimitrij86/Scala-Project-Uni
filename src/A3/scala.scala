@@ -18,6 +18,14 @@ object scala {
       else
        true
        
+     def istGerade1 (x: Int): Boolean =
+       if (x==0)true
+       else istUngerade1 (x-1)
+       
+     def istUngerade1 (x: Int): Boolean =
+       if (x==0) false
+       else istGerade1 (x-1)
+       
      //Teilaugabe 3b
        
      def pred(x: Int): Int = x - 1
@@ -44,6 +52,7 @@ object scala {
        
        println("Die Zahl " + x + " ist gerade: " + istGerade(x))
        println("Die Zahl " + x + " ist ungerade: " + istUngerade(x))
+       println("Die Zahl " + x + " ist Gerade: " + istGerade1(x), "oder Ungerade: " +istUngerade(x) )
        println("Die Summe der beiden Zahlen ist " + add(x, y))
        println("Die Summe der Zahlen von " + x + "nach " + y + " ist " + sumN(x, y))
 }
