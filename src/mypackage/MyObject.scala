@@ -22,6 +22,7 @@ else (x * (x+1) / 2)
         //Teilaufgabe c)
       
       def sumOddN (x: Int): Int =
+if (x==y)x else
       
      2*(sumN (x))-x
      
