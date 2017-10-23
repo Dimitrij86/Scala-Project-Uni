@@ -7,7 +7,9 @@ def main (args: Array[String]): Unit = {
       
      // Teilaufgabe a)
       
-      def sumN (x:Int):Int = (x * (x+1) / 2)
+      def sumN (x:Int):Int = 
+if (x<=0)0
+else (x * (x+1) / 2)
         
       // Teilaufgabe b)
         
