@@ -9,3 +9,6 @@ def map [A, B] (as: List [A]) (f: A => B) : List [B] =
 /* def map [A, B] (as: List [A]) (f: A => B) : List [B] =
 for (x <- as) yield f(x) */
 
+val i = ((List [Int]) => i.tostring);
+val mapStr = map (i);
+mapStr (List (1,2,3))
