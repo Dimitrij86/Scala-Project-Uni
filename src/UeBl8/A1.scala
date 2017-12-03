@@ -21,7 +21,7 @@ object A1 {
   case class BlattInhalt [A, B] (value: B) extends Inhalt [A, B]
   
   // teilaufgabe 1a
-  def formel (A: ArithBaum, B: ArithBaum): Int =
+  /*def formel (A: ArithBaum, B: ArithBaum): Int =
   A, B match {
   case Leer () => Leer ();
   case (A, left, right) =>
@@ -30,22 +30,23 @@ object A1 {
         Knoten (Mal, 6,
             Knoten (Plus, 5, 2))
   }
-  println (formel (A, B))
+  println (formel (A, B))*/
   
   //Teilaufgabe 1b
-  def zeigeBaum (A: ArithBaum): String = 
-      Knoten (Mal, 
+  def zeigeBaum (b: ArithBaum): String = 
+    val b =
+    Knoten (Mal, 
         Knoten (Plus, 3, 7),
         Knoten (Mal, 6,
             Knoten (Plus, 5, 2))
-  print (zeigeBaum (A, B))
+  print (zeigeBaum (b))
   
   
   //Teilaufgabe 1c
-  def toList [A, B] (b: Baum[A, B]) : List [Inhalt [A, B]] =
+  /*def toList [A, B] (b: Baum[A, B]) : List [Inhalt [A, B]] =
   b match {
     case Leer () => List ();
     case BlattInhalt => toList (B.toList);
     case KnotenInhalt => toList (A.toList);
-    }
+    }*/
 }
